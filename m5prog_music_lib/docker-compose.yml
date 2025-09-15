@@ -1,0 +1,42 @@
+services:
+   php:
+      image: wodby/php:latest
+      container_name: prog_m5_php
+      volumes:
+         - './:/var/www/html'
+      depends_on:
+         - mariadb
+
+   nginx:
+      image: nginx:latest
+      container_name: prog_m5_nginx
+      ports:
+         - 80:80
+      volumes:
+         - './:/var/www/html'
+         - './docker:/etc/nginx/conf.d'
+      links:
+         - php
+      depends_on:
+         - php
+
+   mariadb:
+      image: mariadb:latest
+      container_name: prog_m5_mariadb
+      environment:
+         MYSQL_DATABASE: '${DB_NAME}'
+         MYSQL_USER: '${DB_USERNAME}'
+         MYSQL_PASSWORD: '${DB_PASSWORD}'
+         MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
+      ports:
+         - 300:3306
+
+   phpmyadmin:
+      image: phpmyadmin:latest
+      container_name: prog_m5_phpmyadmin
+      environment:
+         PMA_HOST: '${DB_HOST}'
+         PMA_USER: '${DB_USERNAME}'
+         PMA_PASSWORD: '${DB_PASSWORD}'
+      ports:
+        - 400:80
