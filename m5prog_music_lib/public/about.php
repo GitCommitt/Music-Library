@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
@@ -46,9 +46,9 @@
     </nav>
 
     <div class="container my-5">
-      <h1>Home</h1>
+      <h1>About Us</h1>
       <div class="col-lg-8 px-0">
-        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptatem deleniti neque animi esse ipsam ipsa perspiciatis molestias optio quas necessitatibus ab non exercitationem, quidem repudiandae laboriosam est repellat et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, obcaecati architecto, soluta nihil perspiciatis repellat corrupti voluptatum animi aperiam quidem velit qui incidunt in, aut alias sed sunt explicabo itaque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio libero atque ullam necessitatibus dolorem repellendus ex, natus est. Nulla minus itaque eum enim sapiente, atque hic temporibus ratione veniam excepturi!</p>
+        <p class="fs-5">Id voluptate in ipsum magna est anim, eiusmod. Ipsum magna est anim, eiusmod non. Anim eiusmod, non consectetur. Consectetur minim et incididunt tempor nisi proident labore. Et incididunt tempor nisi proident, labore eu ea. Nisi proident labore eu ea, laborum dolore. Eu ea laborum dolore ullamco. Voluptate in ipsum magna est, anim eiusmod. Magna est anim eiusmod non consectetur. Anim eiusmod, non consectetur. Consectetur minim et incididunt tempor nisi proident labore. Et incididunt tempor nisi proident, labore eu ea. In ipsum magna est. Magna est anim eiusmod non consectetur. Anim eiusmod, non consectetur. Consectetur minim et incididunt tempor nisi proident labore. Et incididunt tempor nisi proident, labore eu ea. Nisi proident labore eu ea, laborum dolore. Eu ea laborum dolore ullamco. Laborum dolore ullamco consequat eu. Ipsum magna est anim, eiusmod non. Anim eiusmod, non consectetur. Consectetur minim et incididunt tempor nisi proident labore. Et incididunt tempor nisi proident, labore eu ea. Nisi proident labore eu ea, laborum dolore. Eu ea laborum dolore ullamco. Laborum dolore ullamco consequat eu. Ullamco consequat eu sed quis mollit laborum. Eu sed quis mollit laborum. Quis mollit laborum, duis voluptate aliquip. Magna est anim eiusmod non consectetur. Anim eiusmod, non consectetur. Consectetur minim et incididunt tempor nisi proident labore. Et incididunt tempor nisi proident, labore eu ea. Nisi proident labore eu ea, laborum dolore. Eu ea laborum dolore ullamco. Laborum dolore ullamco consequat eu. Ullamco consequat eu sed quis mollit laborum. Eu sed quis mollit laborum. </p>
       </div>
     </div>
 
