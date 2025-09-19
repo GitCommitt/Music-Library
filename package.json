@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "Music_library",
+  "description": "Go to the project folder and run: npm run build",
+  "version": "1.0.0",
+  "keywords": [],
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack build --mode=development",
+    "build": "webpack build --mode=production"
+  },
+  "author": "My Name",
+  "license": "ISC",
+  "homepage": "https://localhost/m5prog",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "sass-loader": "^16.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "minify": "^11.1.1",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.71.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
