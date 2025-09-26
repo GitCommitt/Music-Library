@@ -8,7 +8,9 @@
   </head>
   <body class="body-bg" >
 
-    <?php include_once "../views/navbar.php"; ?>
+    <?php include_once "../views/navbar.php";?>
+    
+    <?php include "../views/single-data.php";?>
 
     <div class="container my-5">
       <h1>Home</h1>

@@ -21,3 +21,21 @@ body{
     background: linear-gradient(90deg,rgb(199, 150, 87) 20%, rgb(236, 207, 188) 100%);
 }
 
+
+.single-afbeelding_nummer{
+    width: 20vw;
+}
+
+.single-afbeelding_artiest{
+    width: 20vw;
+}
+
+.single_list{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+li{
+    list-style: none;
+}
