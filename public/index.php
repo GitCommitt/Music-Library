@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link href="/dist/css/main.min.css" rel="stylesheet"> 
@@ -9,8 +11,6 @@
   <body class="body-bg" >
 
     <?php include_once "../views/navbar.php";?>
-    
-    <?php include "../views/single-data.php";?>
 
     <div class="container my-5">
       <h1>Home</h1>

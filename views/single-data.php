@@ -44,18 +44,30 @@ $singles = [
         "release_datum" => 2017,
         "afbeelding_nummer" => "./img/bruno-nummer.jpg",
         "afbeelding_artiest" => "./img/bruno-artiest.jpg"
+    ],
+    [
+        "titel" => "Flight Song",
+        "artiest" => "Rachel Platten",
+        "genre" => "Pop",
+        "duur" => "3:24",
+        "release_datum" => 2015,
+        "afbeelding_nummer" => "./img/rachel-nummer.jpg",
+        "afbeelding_artiest" => "./img/rachel-artiest.jpg"
     ]
 ];
     ?>
 
-    <ul class="single_list">
-      <?php foreach ($singles as $single): ?>
-        <li>
-            <li><?= $single['titel'] ?> - 
-            <?= $single['artiest'] ?>
-            (<?= $single['release_datum'] ?>)
-            <li><img class="single-afbeelding_nummer" src="<?= $single['afbeelding_nummer']?>" alt=""></li>
-            <li><img class="single-afbeelding_artiest" src="<?= $single['afbeelding_artiest']?>" alt=""></li>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+<ul class="single_list">
+  <?php foreach ($singles as $single): ?>
+    <li class="single_item">
+      <div class="single_info">
+        <h3><?= $single['titel'] ?></h3>
+        <p><?= $single['artiest'] ?> (<?= $single['release_datum'] ?>)</p>
+      </div>
+      <div class="single_images">
+        <img class="single-afbeelding_nummer" src="<?= $single['afbeelding_nummer']?>" alt="nummer">
+        <img class="single-afbeelding_artiest" src="<?= $single['afbeelding_artiest']?>" alt="artiest">
+      </div>
+    </li>
+  <?php endforeach; ?>
+</ul>

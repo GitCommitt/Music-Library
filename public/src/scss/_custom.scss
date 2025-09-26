@@ -21,21 +21,42 @@ body{
     background: linear-gradient(90deg,rgb(199, 150, 87) 20%, rgb(236, 207, 188) 100%);
 }
 
-
-.single-afbeelding_nummer{
-    width: 20vw;
+.single_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+.single_item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform .2s;
+}
+.single_info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.single_info p {
+  margin: 5px 0 10px;
+  color: #777;
+  font-size: 0.9em;
+}
+.single_images {
+  display: flex;
+  gap: 10px;
+}
+.single_images img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 10px;
 }
 
-.single-afbeelding_artiest{
-    width: 20vw;
-}
-
-.single_list{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-li{
-    list-style: none;
+.single_images img:hover{
+    transform: rotate(5deg);
 }
