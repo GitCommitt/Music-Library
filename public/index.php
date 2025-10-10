@@ -1,3 +1,20 @@
+  <?php
+  require_once('../source/database.php');
+
+  $query = 'SELECT * FROM single ORDER BY title';
+
+  $stmt = $connection->prepare($query);
+
+  $stmt->execute();
+
+  $result = $stmt->get_result();
+
+
+  ?>
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +25,12 @@
   </head>
   <body class="body-bg" >
 
-    <?php include_once "../views/navbar.php";?>
+    <?php include_once "../views/navbar.php";
+    
+    while( $single = mysqli_fetch_assoc($result) ) {
+    print_r( $single );
+    }
+    ?>
 
     <div class="container my-5">
       <h1>Home</h1>

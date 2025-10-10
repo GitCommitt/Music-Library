@@ -30,6 +30,8 @@ services:
          MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD}'
       ports:
          - 300:3306
+      volumes:
+         - ./sql/:/docker-entrypoint-initdb.d
 
    phpmyadmin:
       image: phpmyadmin:latest
