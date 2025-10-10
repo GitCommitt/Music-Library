@@ -1,7 +1,14 @@
   <?php
   require_once('../source/database.php');
 
-  $query = 'SELECT * FROM single ORDER BY title';
+  $query = 
+  'SELECT s.*, g.title as genre_type, a.name as artist_name
+  FROM single s
+  join genre g
+  on s.genre_id = g.id
+  join artist a
+  on s.artist_id = a.id
+  ';
 
   $stmt = $connection->prepare($query);
 
@@ -28,9 +35,12 @@
     <?php include_once "../views/navbar.php";
     
     while( $single = mysqli_fetch_assoc($result) ) {
-    print_r( $single );
+      print_r( $single );
+       include_once "../views/card.php";
     }
     ?>
+
+
 
     <div class="container my-5">
       <h1>Home</h1>
