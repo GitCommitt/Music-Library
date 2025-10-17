@@ -1,21 +1,14 @@
-<div class="card-header">
-    <h4 class="my-0 font-weight-normal"><?php echo $single['title'] ?></h4>
-</div>
-<div class="card-artist">
-    <h4 class="my-0 font-weight-normal"><?php echo $single['artist_name'] ?></h4>
-</div>
-<div class="card-release_date">
-    <h4 class="my-0 font-weight-normal"><?php echo $single['release_date'] ?></h4>
-</div>
-<div class="card-duration">
-    <h4 class="my-0 font-weight-normal"><?php echo $single['duration'] ?></h4>
-</div>
-<div class="card-genre">
-    <h4 class="my-0 font-weight-normal"><?php echo $single['genre_type'] ?></h4>
-</div>
-<div class="card-img">
-    <img class="card-img-top" src="<?php echo $single['img'] ?>" alt="<?php echo $single['title'] ?>">
-</div>
-<div class="card-button">
-    <a href="/single.php?singleid=<?php echo $single['id'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
+<div class="single_item">
+  <div class="single_images">
+    <img src="<?php echo $single['img'] ?>" alt="<?php echo $single['title'] ?>">
+  </div>
+  <h4 class="single_title"><?php echo $single['title'] ?></h4>
+  <p class="single_artist"><?php echo $single['artist_name'] ?></p>
+  <p class="single_release_date"><?php echo $single['release_date'] ?></p>
+  <p class="single_duration"><?php echo $single['duration'] ?></p>
+  <p class="single_genre"><?php echo $single['genre_type'] ?></p>
+  <div class="card-button">
+    <a href="single.php?single=<?php echo $single['id'] ?>" type="button" class="btn">Bekijk</a>
+
+  </div>
 </div>

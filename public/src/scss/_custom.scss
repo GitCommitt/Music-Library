@@ -16,47 +16,105 @@ $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier Ne
 
 $headings-font-family: $font-family-monospace;
 
-
-body{
-    background: linear-gradient(90deg,rgb(199, 150, 87) 20%, rgb(236, 207, 188) 100%);
+body {
+  background: linear-gradient(90deg, rgb(199,150,87) 20%, rgb(236,207,188) 100%);
+  font-family: $font-family-monospace;
+  color: $body-color;
 }
 
-.single_list {
-  list-style: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: $blue;
+  margin-bottom: 40px;
+}
+
+.singles {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  padding-right: 10vw;
-  padding-left: 10vw;
-}
-.single_item {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform .2s;
-}
-.single_info h3 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #333;
-}
-.single_info p {
-  margin: 5px 0 10px;
-  color: #777;
-  font-size: 0.9em;
-}
-.single_images {
-  display: flex;
-  gap: 10px;
-}
-.single_images img {
-  width: 48%;
-  border-radius: 8px;
-  object-fit: cover;
-  margin: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.single_images img:hover{
-    transform: rotate(5deg);
+.singles .single_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px;
+  text-align: center;
+}
+
+.singles .single_item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+.singles .single_images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.singles .single_images img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.singles .single_images img:hover {
+  transform: scale(1.05);
+}
+
+.singles .single_title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.singles .single_artist {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $orange;
+  margin-bottom: 10px;
+}
+
+.singles .single_release_date,
+.singles .single_duration,
+.singles .single_genre {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.singles .card-button {
+  margin-top: 15px;
+}
+
+.singles .card-button .btn {
+  font-size: 0.9rem;
+  border-radius: 8px;
+  padding: 8px 18px;
+  border: 1px solid $blue;
+  color: $blue;
+  transition: all 0.3s ease;
+}
+
+.singles .card-button .btn:hover {
+  background-color: $blue;
+  color: #fff;
 }
