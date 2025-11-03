@@ -7,9 +7,7 @@
   <p class="single_release_date"><?php echo $single['release_date'] ?></p>
   <p class="single_duration"><?php echo $single['duration'] ?></p>
   <p class="single_genre"><?php echo $single['genre_type'] ?></p>
-  <p class="single_slug"><?php echo $single['slug'] ?></p>
   <div class="card-button">
-    <a href="single.php?single=<?php echo $single['id'] ?>" type="button" class="btn">Bekijk</a>
-
+    <a href="/single/<?php echo $single['slug'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
   </div>
 </div>

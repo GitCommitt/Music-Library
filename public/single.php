@@ -1,10 +1,7 @@
   <?php
   require_once('../source/database.php');
 
-  if ( ! isset($_GET['single']) ) {
-    die( 'Geen single gevonden' );
-    }
-    $single_id = $_GET['single'];
+  $single_id = $_GET['single'];
 
   $query = 
   ' SELECT s.*, g.title as genre_type, a.name as artist_name, a.img_artist as img_artist
@@ -35,12 +32,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Singles</title>
     <link href="/dist/css/main.min.css" rel="stylesheet"> 
+    <link href="/assets/css/style.css" rel="stylesheet">
   </head>
   <body class="body-bg" >
 
     <?php include_once "../views/navbar.php";
     $single = mysqli_fetch_assoc($result);
-    include "../views/card.php";
+    include "../views/overview.php";
 
     ?>
     
