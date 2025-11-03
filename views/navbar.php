@@ -13,8 +13,8 @@
               <a class="nav-link" href="about.php">About Us</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex" role="search" action="/search.php" method="get">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searchquery" value="<?php echo isset($_GET['searchquery']) ? htmlspecialchars($_GET['searchquery']) : '' ?>">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
