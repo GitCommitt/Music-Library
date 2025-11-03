@@ -1,4 +1,11 @@
 <?php
+$request_url = explode('/', $_SERVER['REQUEST_URI']);
+
+$mijn_pagina = end($request_url);
+
+echo 'ik bekijk nu het bericht: ' . $mijn_pagina;
+
+
 require_once('../source/database.php');
 $query = '
 SELECT s.*, g.title as genre_type, a.name as artist_name, a.img_artist as img_artist
