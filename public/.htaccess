@@ -1,0 +1,5 @@
+# zet de engine aan
+RewriteEngine On
+
+# zeg wat er moet gebeuren, in dit geval verwijs ik alles zonder een punt naar de index.php-file
+RewriteRule !(\.) index.php [L]
