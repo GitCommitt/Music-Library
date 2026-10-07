@@ -11,7 +11,7 @@ services:
       image: nginx:latest
       container_name: prog_m5_nginx
       ports:
-         - 80:80
+         - 8000:80
       volumes:
          - './:/var/www/html'
          - './docker:/etc/nginx/conf.d'
